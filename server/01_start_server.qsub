@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -l walltime=72:00:00
+#PBS -l ncpus=1
+#PBS -l nodes=compute-0-4
+#PBS -N server_job
+#PBS -q premium
+#PBS -j oe
+#PBS -m aeb
+cd $PBS_O_WORKDIR
+./01_start_servers.sh 
